@@ -55,4 +55,6 @@ GAS-FireBase-FullStack-Chat/
 - チャット画面では画像URLを使って `<img>` タグで表示。
 
 ---
+## 👨‍💻 作者
+- [TatsuyaM2667](https://github.com/TatsuyaM2667)
 
