@@ -20,7 +20,7 @@
 
 ---
 
-## 主なファイルと役割
+## ファイルの内容
 
 ```plaintext
 GAS-FireBase-FullStack-Chat/
@@ -40,7 +40,7 @@ GAS-FireBase-FullStack-Chat/
 - JavaScriptでFirebaseとCloudinaryを管理。
 ---
 
-## 🔄 Realtime Databaseの活用
+##  Realtime Databaseの活用
 
 - メッセージは `push()` メソッドで Realtime Database に保存。
 - `on("child_added")` イベントで新しいメッセージをリアルタイムに取得。
@@ -48,7 +48,7 @@ GAS-FireBase-FullStack-Chat/
 
 ---
 
-## 🖼️ Cloudinaryによる画像管理
+##  Cloudinaryによる画像管理
 
 - ユーザーが画像を選択すると、Cloudinary API経由でアップロード。
 - Cloudinaryから返される画像URLを Realtime Database に保存。
