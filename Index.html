@@ -692,7 +692,7 @@ let btnToggleGroupCreationForm;
 let topProfileSection, dmProfileContent, dmProfileIcon, dmUsernameDisplay, dmEmailDisplay, dmBioDisplay, btnBlockUser;
 let groupInfoDisplay, groupDisplayIcon, displayGroupName, displayGroupMemberCount;
 let myProfileSection, myProfileContent, myProfileIcon, myUsernameDisplay, myEmailDisplay, myBioDisplay, profileEditForm, editUsernameInput, editIconColorInput, editBioInput, btnUpdateProfile, btnUpdateProfilePicture;
-let blockedListContainer, blockedUsersList; // 🔴 NEW
+let blockedListContainer, blockedUsersList; 
 
 let groupEditForm, editGroupNameInput, btnUpdateGroupProfile, searchUserToAddGroupMemberInput, groupMemberAddResultsDiv, currentGroupMembersList, btnRequestGroupDeletion, groupDeletionStatusDiv;
 
@@ -807,8 +807,8 @@ function initializeDOMElements() {
   btnRequestGroupDeletion = document.getElementById("btnRequestGroupDeletion");
   groupDeletionStatusDiv = document.getElementById("groupDeletionStatus");
   btnToggleGroupCreationForm = document.getElementById("btnToggleGroupCreationForm");
-  blockedListContainer = document.getElementById("blockedListContainer"); // 🔴 NEW
-  blockedUsersList = document.getElementById("blockedUsersList"); // 🔴 NEW
+  blockedListContainer = document.getElementById("blockedListContainer"); 
+  blockedUsersList = document.getElementById("blockedUsersList"); 
 }
 
 function setupEventListeners() {
@@ -1091,7 +1091,7 @@ function setupBlockedUsersListener(uid) {
     }
     blockedUsersListener = blockedUsersRef.on("value", snapshot => {
         blockedUsers = snapshot.val() || {};
-        renderBlockedUsersList(); // 🔴 NEW: Render the list of blocked users
+        renderBlockedUsersList(); //  Render the list of blocked users
         renderRoomList();
         if (currentRoomId) {
             const room = rooms[currentRoomId];
@@ -1116,7 +1116,7 @@ function loadAllUsersData() {
     if (allUsersListener) db.ref("users").off("value", allUsersListener);
     allUsersListener = db.ref("users").on("value", snapshot => {
         allRegisteredUsers = snapshot.val() || {};
-        renderBlockedUsersList(); // 🔴 NEW: Re-render blocked list in case user data (like name) was not available before
+        renderBlockedUsersList(); 
         renderRoomList();
         if (currentUser && allRegisteredUsers[currentUser.uid]) {
             const myData = allRegisteredUsers[currentUser.uid];
@@ -1158,7 +1158,7 @@ function updateMyProfileDisplay(username, color, bio, photoURL) {
   if (editBioInput) editBioInput.value = bio || "";
 }
 
-// 🔴 NEW FUNCTION: Renders the list of blocked users in the right panel
+// Renders the list of blocked users in the right panel
 function renderBlockedUsersList() {
     if (!blockedUsersList) return;
     blockedUsersList.innerHTML = '';
