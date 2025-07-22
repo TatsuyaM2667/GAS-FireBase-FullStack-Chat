@@ -9,14 +9,14 @@
 
 ##  使用技術
 
-| 技術             | 用途                                      |
+| 技術             | 用途                                       |
 |------------------|-------------------------------------------|
-| GAS              | フロントエンド・バックエンド・フレームワーク             |
-| Firebase Realtime Database | メッセージの保存・リアルタイム同期       |
-| Firebase Authentication | Googleログインによるユーザー認証         |
-| Cloudinary       | 画像のアップロード・ホスティング           |
-| HTML/CSS         | UI構築とスタイリング                      |
-| JavaScript       | クライアント側の動的処理                  |
+| GAS              | フロントエンド・バックエンド・フレームワーク  |
+| Firebase Realtime Database | メッセージの保存・リアルタイム同期 |
+| Firebase Authentication | Googleログインによるユーザー認証     |
+| Cloudinary       | 画像のアップロード・ホスティング             |
+| HTML/CSS         | UI構築とスタイリング                       |
+| JavaScript       | クライアント側の動的処理                   |
 
 ---
 
