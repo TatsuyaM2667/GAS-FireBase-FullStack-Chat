@@ -15,7 +15,7 @@
 | Firebase Realtime Database | メッセージの保存・リアルタイム同期 |
 | Firebase Authentication | Googleログインによるユーザー認証     |
 | Cloudinary       | 画像のアップロード・ホスティング             |
-| HTML/CSS         | UI構築とスタイリング                       |
+| HTML/CSS(Style属性として使用)| UI構築とスタイリング                       |
 | JavaScript       | クライアント側の動的処理                   |
 
 ---
