@@ -166,7 +166,9 @@ GAS-FireBase-FullStack-Chat/
 - ユーザーが画像を選択すると、Cloudinary API経由でアップロード。
 - Cloudinaryから返される画像URLを Realtime Database に保存。
 - チャット画面では画像URLを使って `<img>` タグで表示。
-
+---
+## License
+MIT License (Attribution Required — © 2025 TatsuyaM2667)
 ---
 ## 👨‍💻 作者
 - [TatsuyaM2667](https://github.com/TatsuyaM2667)
