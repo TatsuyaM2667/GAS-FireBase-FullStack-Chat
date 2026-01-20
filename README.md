@@ -167,6 +167,12 @@ GAS-FireBase-FullStack-Chat/
 - Cloudinaryから返される画像URLを Realtime Database に保存。
 - チャット画面では画像URLを使って `<img>` タグで表示。
 ---
+##  ライセンス
+
+このプロジェクトは、**クレジット表記を必須とする** [MIT License (Modified)](LICENSE) の下で公開されています。
+本ソフトウェアを使用または改変して利用する場合は、以下のクレジット表記を含めてください：
+> "This project includes software originally created by GitHub user: TatsuyaM2667."
+
 ## License
 MIT License (Attribution Required — © 2025 TatsuyaM2667)
 ---
